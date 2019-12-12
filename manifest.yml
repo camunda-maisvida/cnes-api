@@ -1,0 +1,9 @@
+---
+applications:
+- name: cnes-api
+  memory: 1024M
+  instances: 1
+  routes:
+  - route: cnes-api.cfapps.io
+  env:
+    APPLICATION_DOMAIN: cnes-api.cfapps.io

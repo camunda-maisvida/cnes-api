@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2019.12.12 às 02:27:07 PM BRT 
+
+  -->
+  <bindings xmlns:tns="http://servicos.saude.gov.br/cnes/v1r0/estabelecimentosaudeservice" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:requestConsultarEstabelecimentoSaude">
+      <class ref="br.com.maisvida.cnes.wsdl.RequestConsultarEstabelecimentoSaude"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:responseConsultarEstabelecimentoSaude">
+      <class ref="br.com.maisvida.cnes.wsdl.ResponseConsultarEstabelecimentoSaude"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:requestLocalizarEstabelecimentoSaude">
+      <class ref="br.com.maisvida.cnes.wsdl.RequestLocalizarEstabelecimentoSaude"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:responseLocalizarEstabelecimentoSaude">
+      <class ref="br.com.maisvida.cnes.wsdl.ResponseLocalizarEstabelecimentoSaude"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:requestConsultarPrecadastroCNES">
+      <class ref="br.com.maisvida.cnes.wsdl.RequestConsultarPrecadastroCNES"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:responseConsultarPrecadastroCNES">
+      <class ref="br.com.maisvida.cnes.wsdl.ResponseConsultarPrecadastroCNES"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisaestabelecimentosaude" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:FiltroPesquisaEstabelecimentoSaudeType">
+      <class ref="br.com.maisvida.cnes.wsdl.FiltroPesquisaEstabelecimentoSaudeType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosgeraiscnes" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DadosGeraisEstabelecimentoSaudeType">
+      <class ref="br.com.maisvida.cnes.wsdl.DadosGeraisEstabelecimentoSaudeType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtrolocalizacaoestabelecimentosaude" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:FiltroLocalizacaoEstabelecimentoSaudeType">
+      <class ref="br.com.maisvida.cnes.wsdl.FiltroLocalizacaoEstabelecimentoSaudeType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/resultadoslocalizacaoestabelecimentosaude" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ResultadosLocalizacaoEstabelecimentoSaudeType">
+      <class ref="br.com.maisvida.cnes.wsdl.ResultadosLocalizacaoEstabelecimentoSaudeType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisaprecadastrocnes" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:FiltroPesquisaPrecadastroCnesType">
+      <class ref="br.com.maisvida.cnes.wsdl.FiltroPesquisaPrecadastroCnesType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosprecadastrocnes" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DadosPreCadastroCNESType">
+      <class ref="br.com.maisvida.cnes.wsdl.DadosPreCadastroCNESType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:CodigoCNESType">
+      <class ref="br.com.maisvida.cnes.wsdl.CodigoCNESType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:CNPJType">
+      <class ref="br.com.maisvida.cnes.wsdl.CNPJType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/tipounidade" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:TipoUnidadeType">
+      <class ref="br.com.maisvida.cnes.wsdl.TipoUnidadeType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/paginacao" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:PaginacaoType">
+      <class ref="br.com.maisvida.cnes.wsdl.PaginacaoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:localizacaoType">
+      <class ref="br.com.maisvida.cnes.wsdl.LocalizacaoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/codigounidade" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:CodigoUnidadeType">
+      <class ref="br.com.maisvida.cnes.wsdl.CodigoUnidadeType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:NomeJuridicoType">
+      <class ref="br.com.maisvida.cnes.wsdl.NomeJuridicoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:EnderecoType">
+      <class ref="br.com.maisvida.cnes.wsdl.EnderecoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/v1r2/municipio" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:MunicipioType">
+      <class ref="br.com.maisvida.cnes.wsdl.MunicipioType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/v1r1/uf" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:UFType">
+      <class ref="br.com.maisvida.cnes.wsdl.UFType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/v1r2/pais" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:PaisType">
+      <class ref="br.com.maisvida.cnes.wsdl.PaisType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r1/tipologradouro" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:TipoLogradouroType">
+      <class ref="br.com.maisvida.cnes.wsdl.TipoLogradouroType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r1/bairro" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:BairroType">
+      <class ref="br.com.maisvida.cnes.wsdl.BairroType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r1/cep" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:CEPType">
+      <class ref="br.com.maisvida.cnes.wsdl.CEPType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/esferaadministrativa" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:EsferaAdministrativaType">
+      <class ref="br.com.maisvida.cnes.wsdl.EsferaAdministrativaType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/diretor" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DiretorType">
+      <class ref="br.com.maisvida.cnes.wsdl.DiretorType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:CPFType">
+      <class ref="br.com.maisvida.cnes.wsdl.CPFType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/pessoafisica/v1r2/nomecompleto" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:NomeCompletoType">
+      <class ref="br.com.maisvida.cnes.wsdl.NomeCompletoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:TelefoneType">
+      <class ref="br.com.maisvida.cnes.wsdl.TelefoneType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r1/tipotelefone" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:TipoTelefoneType">
+      <class ref="br.com.maisvida.cnes.wsdl.TipoTelefoneType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:EmailType">
+      <class ref="br.com.maisvida.cnes.wsdl.EmailType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TipoEmailType">
+      <typesafeEnumClass ref="br.com.maisvida.cnes.wsdl.TipoEmailType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/servicoespecializados" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ServicoEspecializadosType">
+      <class ref="br.com.maisvida.cnes.wsdl.ServicoEspecializadosType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/servicoespecializado" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ServicoEspecializadoType">
+      <class ref="br.com.maisvida.cnes.wsdl.ServicoEspecializadoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/servicoclassificacoes" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ServicoClassificacoesType">
+      <class ref="br.com.maisvida.cnes.wsdl.ServicoClassificacoesType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/cnes/v1r0/servicoclassificacao" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ServicoClassificacaoType">
+      <class ref="br.com.maisvida.cnes.wsdl.ServicoClassificacaoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/wsdl/mensageria/falha/v5r0/msfalha" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:MSFalha">
+      <class ref="br.com.maisvida.cnes.wsdl.MSFalha"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/wsdl/mensageria/falha/v5r0/mensagem" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:MensagemType">
+      <class ref="br.com.maisvida.cnes.wsdl.MensagemType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/resultadolocalizacaoestabelecimentosaude" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ResultadoLocalizacaoEstabelecimentoSaudeType">
+      <class ref="br.com.maisvida.cnes.wsdl.ResultadoLocalizacaoEstabelecimentoSaudeType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/naturezajuridica" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:NaturezaJuridicaType">
+      <class ref="br.com.maisvida.cnes.wsdl.NaturezaJuridicaType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/tiponaturezajuridica" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.maisvida.cnes.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:TipoNaturezaJuridicaType">
+      <class ref="br.com.maisvida.cnes.wsdl.TipoNaturezaJuridicaType"/>
+    </bindings>
+  </bindings>
+</bindings>
