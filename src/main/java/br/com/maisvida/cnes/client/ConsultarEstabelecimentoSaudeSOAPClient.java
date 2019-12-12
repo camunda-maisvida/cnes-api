@@ -19,7 +19,7 @@ public class ConsultarEstabelecimentoSaudeSOAPClient {
 	private SOAPConnector soapConnector;
 
 	public DadosGeraisEstabelecimentoSaudeType consultarEstabelecimentoPorCnpj(String cnpj) {
-		if(cnpj == null || cnpj.isBlank()) {
+		if(cnpj == null || cnpj.isEmpty()) {
 			return null;
 		}
 		
@@ -35,7 +35,7 @@ public class ConsultarEstabelecimentoSaudeSOAPClient {
 
 	public DadosGeraisEstabelecimentoSaudeType consultarEstabelecimentoPorCodigo(@NotBlank String codigo) {
 
-		if(codigo == null ||codigo.isBlank()) {
+		if(codigo == null ||codigo.isEmpty()) {
 			return null;
 		}
 		

@@ -17,7 +17,7 @@
 	<description>CNES API</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 
 	<dependencies>
@@ -91,7 +91,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>your.main.class.MainClass</mainClass>
+					<mainClass>br.com.maisvida.cnes.CnesApiApplication</mainClass>
 				</configuration>
 			</plugin>
 			<!-- 
