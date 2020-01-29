@@ -11,6 +11,7 @@ import br.com.maisvida.cnes.wsdl.DadosGeraisEstabelecimentoSaudeType;
 import br.com.maisvida.cnes.wsdl.FiltroPesquisaEstabelecimentoSaudeType;
 import br.com.maisvida.cnes.wsdl.RequestConsultarEstabelecimentoSaude;
 import br.com.maisvida.cnes.wsdl.ResponseConsultarEstabelecimentoSaude;
+import io.micrometer.core.instrument.util.StringUtils;
 
 @Service
 public class ConsultarEstabelecimentoSaudeSOAPClient {
@@ -19,7 +20,7 @@ public class ConsultarEstabelecimentoSaudeSOAPClient {
 	private SOAPConnector soapConnector;
 
 	public DadosGeraisEstabelecimentoSaudeType consultarEstabelecimentoPorCnpj(String cnpj) {
-		if(cnpj == null || cnpj.isEmpty()) {
+		if(StringUtils.isBlank(cnpj)) {
 			return null;
 		}
 		
@@ -29,13 +30,14 @@ public class ConsultarEstabelecimentoSaudeSOAPClient {
 		cnpjType.setNumeroCNPJ(cnpj);
 		filtro.setCNPJ(cnpjType);
 		request.setFiltroPesquisaEstabelecimentoSaude(filtro);
-		ResponseConsultarEstabelecimentoSaude response = (ResponseConsultarEstabelecimentoSaude) soapConnector.callWebService("https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0/consultarEstabelecimentoSaude", request);
+		Object callWebService = soapConnector.callWebService("https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0/consultarEstabelecimentoSaude", request);
+		ResponseConsultarEstabelecimentoSaude response = (ResponseConsultarEstabelecimentoSaude) callWebService;
 		return response.getDadosGeraisEstabelecimentoSaude();
 	}
 
 	public DadosGeraisEstabelecimentoSaudeType consultarEstabelecimentoPorCodigo(@NotBlank String codigo) {
 
-		if(codigo == null ||codigo.isEmpty()) {
+		if(StringUtils.isBlank(codigo)) {
 			return null;
 		}
 		

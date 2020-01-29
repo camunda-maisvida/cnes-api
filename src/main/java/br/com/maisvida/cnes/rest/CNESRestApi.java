@@ -1,8 +1,8 @@
 package br.com.maisvida.cnes.rest;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.br.CNPJ;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +22,7 @@ public class CNESRestApi {
 	private ConsultarEstabelecimentoSaudeSOAPClient client;
 
 	@GetMapping(value = "/cnes/estabelecimento/cnpj/{cnpj}")
-	public ResponseEntity<DadosGeraisEstabelecimentoSaudeType> buscarPorCnpj(@NotBlank @Size(min = 14, max = 14) @PathVariable(value = "cnpj") String cnpj) {
+	public ResponseEntity<DadosGeraisEstabelecimentoSaudeType> buscarPorCnpj(@NotBlank @CNPJ @PathVariable(value = "cnpj") String cnpj) {
 		
 		DadosGeraisEstabelecimentoSaudeType response = client.consultarEstabelecimentoPorCnpj(cnpj);
 		
